@@ -5,7 +5,7 @@ const router = require ('./routes')
 app.use(express.json())
 app.use(router)
 
-app.get('/', (req, res) => {
+app.get('/dashboard', (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
         <title>Halaman HTML</title>
     </head>
     <body>
-        <h1>Selamat Datang di Halaman HTML</h1>
+        <h1>Selamat Datang di Halaman tugas</h1>
         <p>Ini adalah halaman HTML yang dikirim dari Express.</p>
     </body>
     </html>
